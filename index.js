@@ -22,7 +22,7 @@ const createFromGSheet = async () => {
           fileName: r.name + " - " + r.phone,
           phone: r.phone,
           name: r.name,
-          ward: r.ward,
+          ward: "Ward: " + r.ward,
           address: r.address
         },
         cardTemplate
@@ -39,11 +39,11 @@ const createSingle = data => {
   console.log("----done-----");
 };
 
-createSingle({
-  name: "Santosh Shrestha",
-  phone: "9801109670",
-  ward: "Ward# 1",
-  address: "Jaleshwor, Janakpur"
-});
+// createSingle({
+//   name: "Santosh Shrestha",
+//   phone: "9801109670",
+//   ward: "Ward# 1",
+//   address: "Jaleshwor, Janakpur"
+// });
 
-//createFromGSheet();
+createFromGSheet();
