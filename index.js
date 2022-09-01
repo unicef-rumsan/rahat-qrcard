@@ -39,11 +39,11 @@ const createSingle = data => {
   console.log("----done-----");
 };
 
-// createSingle({
-//   name: "प्रधानन्यायाधीश विवादमा",
-//   phone: "9801109670",
-//   ward: "Ward# 1",
-//   address: "Jaleshwor, Janakpur"
-// });
+createSingle({
+  name: "Santosh Shrestha",
+  phone: "9801109670",
+  ward: "Ward# 1",
+  address: "Jaleshwor, Janakpur"
+});
 
-createFromGSheet();
+//createFromGSheet();
