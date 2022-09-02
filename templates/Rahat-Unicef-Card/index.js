@@ -6,8 +6,8 @@ module.exports = {
     }
   },
   document: data => {
-    const qrPosition = 300;
-    const namePosition = 800;
+    const qrPosition = 270;
+    const namePosition = 820;
     return {
       pageSize: {
         width: 760,
@@ -23,15 +23,15 @@ module.exports = {
         {
           alignment: "center",
           qr: data.phone,
-          fit: "380",
+          fit: "430",
           absolutePosition: { x: 0, y: qrPosition }
         },
         {
           text: data.phone,
           font: "Poppins",
           alignment: "center",
-          fontSize: 28,
-          absolutePosition: { x: 0, y: qrPosition + 400 }
+          fontSize: 34,
+          absolutePosition: { x: 0, y: qrPosition + 440 }
         },
         {
           text: data.name,
