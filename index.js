@@ -17,10 +17,16 @@ const createFromGSheet = async () => {
     .filter(r => r.is_generated === "FALSE" && r.phone)
     .forEach(async r => {
       console.log(">", r.name);
+      let amount = 0;
+      try {
+        amount = parseInt(r.amount);
+      } catch (e) {}
+      amount = amount || 0;
       PDFMaker(
         {
           fileName: r.name + " - " + r.phone,
           phone: r.phone,
+          amount,
           name: r.name,
           ward: "Ward: " + r.ward,
           address: r.address

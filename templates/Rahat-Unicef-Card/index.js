@@ -10,7 +10,7 @@ module.exports = {
     const namePosition = 820;
     return {
       pageSize: {
-        width: 760,
+        width: 765,
         height: "auto"
       },
       pageOrientation: "portrait",
@@ -22,7 +22,7 @@ module.exports = {
         },
         {
           alignment: "center",
-          qr: data.phone,
+          qr: `phone:${data.phone}?amount=${data.amount}`,
           fit: "430",
           absolutePosition: { x: 0, y: qrPosition }
         },
