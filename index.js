@@ -20,7 +20,7 @@ const createFromGSheet = async () => {
       let amount = 0;
       try {
         amount = parseInt(r.amount);
-      } catch (e) {}
+      } catch (e) { }
       amount = amount || 0;
       PDFMaker(
         {
@@ -28,7 +28,7 @@ const createFromGSheet = async () => {
           phone: r.phone,
           amount,
           name: r.name,
-          ward: "Ward: " + r.ward,
+          ward: "वडा : " + r.ward,
           address: r.address
         },
         cardTemplate

@@ -46,14 +46,14 @@ module.exports = {
           font: "Poppins",
           alignment: "center",
           fontSize: 22,
-          absolutePosition: { x: 0, y: namePosition + 62 }
+          absolutePosition: { x: 0, y: namePosition + 120 }
         },
         {
           text: data.address,
           font: "Poppins",
           alignment: "center",
           fontSize: 22,
-          absolutePosition: { x: 0, y: namePosition + 120 }
+          absolutePosition: { x: 0, y: namePosition + 72 }
         }
         // {
         //   text: `Thank you for donating blood at the Smart Blood Donation Drive
