@@ -2,7 +2,11 @@ module.exports = {
   fonts: {
     Poppins: {
       normal: __dirname + "/Poppins-Regular.ttf",
-      bold: __dirname + "/Poppins-Bold.ttf"
+      bold: __dirname + "/Poppins-Bold.ttf",
+    },
+    Preeti: {
+      normal: __dirname + "/Preeti-Regular.ttf",
+      bold: __dirname + "/Preeti-Bold.ttf",
     }
   },
   document: data => {
@@ -43,17 +47,17 @@ module.exports = {
         },
         {
           text: data.ward,
-          font: "Poppins",
+          font: "Preeti",
           alignment: "center",
-          fontSize: 22,
-          absolutePosition: { x: 0, y: namePosition + 62 }
+          fontSize: 34,
+          absolutePosition: { x: 0, y: namePosition + 120 }
         },
         {
           text: data.address,
           font: "Poppins",
           alignment: "center",
           fontSize: 22,
-          absolutePosition: { x: 0, y: namePosition + 120 }
+          absolutePosition: { x: 0, y: namePosition + 72 }
         }
         // {
         //   text: `Thank you for donating blood at the Smart Blood Donation Drive
