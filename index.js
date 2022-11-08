@@ -28,7 +28,7 @@ const createFromGSheet = async () => {
           phone: r.phone,
           amount,
           name: r.name,
-          ward: "वडा : " + r.ward,
+          ward: "j8f g= M " + r.ward,
           address: r.address
         },
         cardTemplate
